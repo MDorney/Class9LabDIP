@@ -43,31 +43,31 @@ public class BaggageServiceTipCalculator implements TipCalculator {
         return tip;
     }
 
-    public double getGoodRate() {
+    public final double getGoodRate() {
         return goodRate;
     }
 
-    public void setGoodRate(double goodRate) {
+    public final void setGoodRate(double goodRate) {
         if (goodRate <= 0 || goodRate >= 1)
             throw new IllegalArgumentException("This rate should be a decimal.");
         this.goodRate = goodRate;
     }
 
-    public double getFairRate() {
+    public final double getFairRate() {
         return fairRate;
     }
 
-    public void setFairRate(double fairRate) {
+    public final void setFairRate(double fairRate) {
         if (fairRate <= 0 || fairRate >= 1)
             throw new IllegalArgumentException("This rate should be a decimal.");
         this.fairRate = fairRate;
     }
 
-    public double getPoorRate() {
+    public final double getPoorRate() {
         return poorRate;
     }
 
-    public void setPoorRate(double poorRate) {
+    public final void setPoorRate(double poorRate) {
         if (poorRate <= 0 || poorRate >= 1)
             throw new IllegalArgumentException("This rate should be a decimal.");
         this.poorRate = poorRate;
