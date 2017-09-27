@@ -11,7 +11,7 @@ package dip.lab2;
  */
 public class TipService {
     
-    public double calculateTip(TipCalculator tipCalc) {
+    public final double calculateTip(TipCalculator tipCalc) {
         if(tipCalc == null) {
             throw new IllegalArgumentException("A Tip Calculator is mandatory.");
         }
